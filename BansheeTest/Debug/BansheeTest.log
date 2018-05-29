@@ -1,0 +1,2 @@
+﻿  BansheeTest.cpp
+c:\users\epulapp\documents\visual studio 2017\projects\bansheetest\bansheetest\bansheetest.cpp(18): fatal error C1010: fin de fichier inattendue lors de la recherche d'un en-tête précompilé. N'auriez-vous pas oublié d'ajouter '#include "stdafx.h"' à votre source ?

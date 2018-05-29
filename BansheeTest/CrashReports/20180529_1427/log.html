@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+html {
+  font-family: sans-serif;
+} 
+			
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	border: 1px solid #cbcbcb;
+	width:100%;
+	table-layout:fixed;
+}
+
+table caption 
+{
+	color: #000;
+	font: italic 85%/1 arial, sans-serif;
+	padding: 1em 0;
+	text-align: center;
+}
+
+table td,
+table th 
+{
+	border-left: 1px solid #cbcbcb;/*  inner column border */
+	border-width: 0 0 0 1px;
+	font-size: inherit;
+	margin: 0;
+	overflow: visible; /*to make ths where the title is really long work*/
+	padding: 0.5em 1em; /* cell padding */
+}
+
+table td:first-child,
+table th:first-child 
+{
+	border-left-width: 0;
+}
+
+table thead 
+{
+	background-color: #e0e0e0;
+	color: #000;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+table td 
+{
+	background-color: transparent;
+	word-wrap:break-word;
+	vertical-align: top;
+	color: #7D7D7D;
+}
+
+.debug-row td {
+	background-color: #FFFFFF;
+}
+
+.debug-alt-row td {
+	background-color: #f2f2f2;
+}
+
+.warn-row td {
+	background-color: #ffc016;
+	color: #5F5F5F;
+}
+
+.warn-alt-row td {
+	background-color: #fdcb41;
+	color: #5F5F5F;
+}
+
+.error-row td {
+	background-color: #9f1621;
+	color: #9F9F9F;
+}
+
+.error-alt-row td {
+	background-color: #ae1621;
+	color: #9F9F9F;
+}
+</style>
+<title>Banshee Engine Log</title>
+</head>
+<body>
+<h1>Banshee Engine Log</h1>
+<h2>System information</h2>
+<p>Banshee version: 0.4</p>
+<p>OS version: Windows 6 64-bit</p>
+<p>CPU vendor: GenuineIntel</p>
+<p>CPU name: Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz</p>
+<p>CPU clock speed: 2808Mhz</p>
+<p>CPU core count: 4</p>
+<p>GPU: Intel(R) HD Graphics 520</p>
+<h2>Log entries</h2>
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col" style="width:60px">Type</th>
+			<th scope="col">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="error-row">
+			<td>Error</td>
+			<td>A fatal error occurred and the program has to terminate!<br>
+  - Error: InternalErrorException<br>
+  - Description: This method can only be accessed from the core thread.<br>
+  - In function: void __cdecl bs::throwIfNotCoreThread(void)<br>
+  - In file: c:\projects\bsf\source\foundation\bsfcore\corethread\bscorethread.cpp:310<br>
+<br>
+Stack trace: <br>
+0x8790971700838 Module[bsf.dll]<br>
+0x8790972998179 Module[bsf.dll]<br>
+0x8790973009040 Module[bsf.dll]<br>
+0x8790979608399 Module[bsf.dll]<br>
+0x8791087052855 Module[bsfD3D11RenderAPI.dll]<br>
+0x8791087056986 Module[bsfD3D11RenderAPI.dll]<br>
+0x8791087017503 Module[bsfD3D11RenderAPI.dll]<br>
+0x8791087024728 Module[bsfD3D11RenderAPI.dll]<br>
+0x8791045040969 Module[bsfRenderBeast.dll]<br>
+0x8791045040504 Module[bsfRenderBeast.dll]<br>
+0x8791044992998 Module[bsfRenderBeast.dll]<br>
+0x8791047055786 Module[bsfRenderBeast.dll]<br>
+0x8791099583751 Module[ucrtbased.dll]<br>
+0x8791099582165 Module[ucrtbased.dll]<br>
+0x8791099582426 Module[ucrtbased.dll]<br>
+0x8791099584273 Module[ucrtbased.dll]<br>
+0x8791046943897 Module[bsfRenderBeast.dll]<br>
+0x8791046948452 Module[bsfRenderBeast.dll]<br>
+0x8791046947927 Module[bsfRenderBeast.dll]<br>
+0x8791046948814 Module[bsfRenderBeast.dll]<br>
+0x8791046949169 Module[bsfRenderBeast.dll]<br>
+0x2007660011 Module[ntdll.dll]<br>
+0x2007679040 Module[ntdll.dll]<br>
+0x8791099580986 Module[ucrtbased.dll]<br>
+0x8791099580921 Module[ucrtbased.dll]<br>
+0x8791099581750 Module[ucrtbased.dll]<br>
+0x5354014317 Module[BansheeTest.exe]<br>
+0x5354013982 Module[BansheeTest.exe]<br>
+0x5354014777 Module[BansheeTest.exe]<br>
+0x2006342093 Module[kernel32.dll]<br>
+0x2007775293 Module[ntdll.dll]</td>
+		</tr>
+   </tbody>
+</table>
+</body>
+</html>

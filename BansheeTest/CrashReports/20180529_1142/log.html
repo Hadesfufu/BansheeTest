@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+html {
+  font-family: sans-serif;
+} 
+			
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	border: 1px solid #cbcbcb;
+	width:100%;
+	table-layout:fixed;
+}
+
+table caption 
+{
+	color: #000;
+	font: italic 85%/1 arial, sans-serif;
+	padding: 1em 0;
+	text-align: center;
+}
+
+table td,
+table th 
+{
+	border-left: 1px solid #cbcbcb;/*  inner column border */
+	border-width: 0 0 0 1px;
+	font-size: inherit;
+	margin: 0;
+	overflow: visible; /*to make ths where the title is really long work*/
+	padding: 0.5em 1em; /* cell padding */
+}
+
+table td:first-child,
+table th:first-child 
+{
+	border-left-width: 0;
+}
+
+table thead 
+{
+	background-color: #e0e0e0;
+	color: #000;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+table td 
+{
+	background-color: transparent;
+	word-wrap:break-word;
+	vertical-align: top;
+	color: #7D7D7D;
+}
+
+.debug-row td {
+	background-color: #FFFFFF;
+}
+
+.debug-alt-row td {
+	background-color: #f2f2f2;
+}
+
+.warn-row td {
+	background-color: #ffc016;
+	color: #5F5F5F;
+}
+
+.warn-alt-row td {
+	background-color: #fdcb41;
+	color: #5F5F5F;
+}
+
+.error-row td {
+	background-color: #9f1621;
+	color: #9F9F9F;
+}
+
+.error-alt-row td {
+	background-color: #ae1621;
+	color: #9F9F9F;
+}
+</style>
+<title>Banshee Engine Log</title>
+</head>
+<body>
+<h1>Banshee Engine Log</h1>
+<h2>System information</h2>
+<p>Banshee version: 0.4</p>
+<p>OS version: Windows 6 64-bit</p>
+<p>CPU vendor: GenuineIntel</p>
+<p>CPU name: Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz</p>
+<p>CPU clock speed: 2808Mhz</p>
+<p>CPU core count: 4</p>
+<p>GPU: Intel(R) HD Graphics 520</p>
+<h2>Log entries</h2>
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col" style="width:60px">Type</th>
+			<th scope="col">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="warn-row">
+			<td>Warning</td>
+			<td>Attempting to open a file that doesn't exist: Data\Raw\DataList.json<br>
+		 in class std::shared_ptr<class bs::DataStream> __cdecl bs::FileSystem::openFile(const class bs::Path &,bool) [c:\projects\bsf\source\foundation\bsfutility\private\win32\bswin32filesystem.cpp:280]<br>
+</td>
+		</tr>
+		<tr class="warn-alt-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Shaders\SpriteText.bsl.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Shaders\SpriteImageAlpha.bsl.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-alt-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Shaders\SpriteImageNoAlpha.bsl.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Shaders\SpriteLine.bsl.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-alt-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Shaders\Diffuse.bsl.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Shaders\Transparent.bsl.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-alt-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Skin\Sprites\sprite_White.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\arial.ttf.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-alt-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\GUISkin.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Cursors\Arrow.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-alt-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Cursors\ArrowDrag.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Cursors\ArrowLeftRight.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-alt-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Cursors\IBeam.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Cursors\Deny.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-alt-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Cursors\Wait.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Cursors\SizeNESW.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-alt-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Cursors\SizeNS.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Cursors\SizeNWSE.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="warn-alt-row">
+			<td>Warning</td>
+			<td>Cannot load resource. Specified file: Data\Cursors\SizeWE.psd.asset doesn't exist.<br>
+		 in class bs::TResourceHandle<class bs::Resource,0> __cdecl bs::Resources::load(const class bs::Path &,class bs::Flags<enum bs::ResourceLoadFlag,unsigned int>) [c:\projects\bsf\source\foundation\bsfcore\resources\bsresources.cpp:37]<br>
+</td>
+		</tr>
+		<tr class="error-row">
+			<td>Error</td>
+			<td>A fatal error occurred and the program has to terminate!<br>
+  - Error: InternalErrorException<br>
+  - Description: Trying to access a resource that hasn't been loaded yet.<br>
+  - In function: void __cdecl bs::ResourceHandleBase::throwIfNotLoaded(void) const<br>
+  - In file: c:\projects\bsf\source\foundation\bsfcore\resources\bsresourcehandle.cpp:123<br>
+<br>
+Stack trace: <br>
+0x8790885848678 Module[bsf.dll]<br>
+0x8790896504198 Module[bsf.dll]<br>
+0x8790895592374 Module[bsf.dll]<br>
+0x8790895498630 Module[bsf.dll]<br>
+0x8790908116374 Module[bsf.dll]<br>
+0x8790912254595 Module[bsf.dll]<br>
+0x8790912256716 Module[bsf.dll]<br>
+0x8790912271178 Module[bsf.dll]<br>
+0x5359101154 Module[BansheeTest.exe]<br>
+0x5359100675 Module[BansheeTest.exe]<br>
+0x5359118321 Module[BansheeTest.exe]<br>
+0x5359122020 Module[BansheeTest.exe]<br>
+0x5359121684 Module[BansheeTest.exe]<br>
+0x5359121374 Module[BansheeTest.exe]<br>
+0x5359122169 Module[BansheeTest.exe]<br>
+0x2006342093 Module[kernel32.dll]<br>
+0x2007775293 Module[ntdll.dll]</td>
+		</tr>
+   </tbody>
+</table>
+</body>
+</html>
